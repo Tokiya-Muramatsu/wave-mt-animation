@@ -1,4 +1,197 @@
 body {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
+
+header {
+  align-items: center;
+  position: fixed;
+}
+
+.header_h1 h1 {
+  font-size: 32px;
+  color: #3fbd3f;
+  margin-left: 10px;
+}
+
+.main-box {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+}
+
+.box01 {
+  width: 64%;
+}
+
+.leaf-top {
+  width: 100%;
+  height: 60px;
+  margin: 100px 0px 20px;
+  background-image: url(assets/images/leaf.png);
+  background-position: center;
+  background-size: cover;
+}
+
+.circle-box {
+  width: 400px;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  border-radius: 50%;
+  background: conic-gradient(#a8e063, #56ab2f, #a8e063);
+  padding: 10px;
+}
+
+.content {
+  width: 95%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: white;
+  border-radius: 50%;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.content h2 {
+  margin: 10px 0;
+  font-size: 2.4em;
+  color: #59c74a;
+}
+
+.content p {
+  margin: 10px 0;
+  font-size: 1.5em;
+  color: #212121;
+}
+
+.leaf-bottom {
+  width: 100%;
+  height: 60px;
+  margin: 20px 0px 0px;
+  background-image: url(assets/images/leaf.png);
+  background-position: center;
+  background-size: cover;
+}
+
+.box02 {
+  position: relative;
+  width: 40%;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+
+  .img-01,
+  .img-02,
+  .img-03 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .img-01 {
+    background-image: url('assets/images/family.jpg');
+    background-position: center;
+    animation: slide-animation-01 20s infinite;
+  }
+
+  .img-02 {
+    background-image: url('assets/images/forest.jpg');
+    background-position: center;
+    animation: slide-animation-02 20s infinite;
+  }
+
+  .img-03 {
+    background-image: url('assets/images/laboratory.jpg');
+    background-position: center;
+    animation: slide-animation-03 20s infinite;
+  }
+
+  @keyframes slide-animation-01 {
+    0% {
+      opacity: 1;
+      transform: scale(1.0);
+    }
+
+    30% {
+      opacity: 1;
+    }
+
+    40% {
+      opacity: 0;
+      transform: scale(1.15);
+    }
+
+    90% {
+      opacity: 0
+    }
+
+    100% {
+      opacity: 1;
+      transform: scale(1.0);
+    }
+  }
+
+  @keyframes slide-animation-02 {
+    0% {
+      opacity: 0;
+    }
+
+    30% {
+      opacity: 0;
+      transform: scale(1.1);
+    }
+
+    40% {
+      opacity: 1;
+    }
+
+    60% {
+      opacity: 1;
+    }
+
+    70% {
+      opacity: 0;
+      transform: scale(1.0);
+    }
+
+    100% {
+      opacity: 0;
+    }
+  }
+
+  @keyframes slide-animation-03 {
+    0% {
+      opacity: 0;
+    }
+
+    60% {
+      opacity: 0;
+      transform: scale(1.0);
+    }
+
+    70% {
+      opacity: 1;
+    }
+
+    90% {
+      opacity: 1;
+    }
+
+    100% {
+      opacity: 0;
+      transform: scale(1.1);
+    }
+  }
